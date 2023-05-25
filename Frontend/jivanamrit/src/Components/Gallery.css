@@ -1,0 +1,54 @@
+.MaindivGallery{
+    display: flex;
+    margin:25px
+}
+
+
+.rightdivgal{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:15px;
+    margin-left: 10px;
+}
+
+.nichewaladivGallery{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:15px;
+    margin: 20px;
+}
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    .MaindivGallery{
+        flex-direction: column;
+    }
+    .leftList{
+        width: 60%;
+    }
+    .rightdivgal{
+        grid-template-columns: repeat(2,1fr);
+    
+    }
+    .nichewaladivGallery{
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .MaindivGallery{
+        flex-direction: column;
+        align-items: center;
+    }
+    .rightdivgal{
+        grid-template-columns: repeat(1,1fr);
+       
+    }
+    .nichewaladivGallery{
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+    }
+
+    }

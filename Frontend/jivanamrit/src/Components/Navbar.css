@@ -1,0 +1,67 @@
+*{
+    /* color: white; */
+    font-weight: bold;
+}
+.active{
+  color:rgb(223, 193, 231);
+  /* font-weight: bolder;
+  width:30px; */
+
+  background-color: rgb(33, 86, 184);
+}
+.logo{
+    /* border-radius: 50px; */
+    /* background-color: rgb(233, 229, 224); */
+}
+
+.navbar{
+    background-color:#27bbbd;
+    /* margin: -50px -5px -80px -5 ; */
+}
+.navtag{
+    color: white;
+}
+
+.logodiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    box-shadow: rgb(122,206,250,1) 0px 30px 60px -12px inset,rgb(122,206,250,1) 0px 18px 36px -18px inset;
+}
+
+.logoimageNav{
+    border: 2px solid #01a2ff;
+    border-radius: 100%;
+}
+.logoimageNav img:hover{
+ scale:1.15;
+}
+.lines{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  gap: 30px;
+}
+.bluenavbar{
+   /* background-color: #22a3a5; */
+   /* width: 100vw; */
+   /* overflow-x: hidden; */
+}
+
+@media only screen and (max-width: 1000px) {
+    .lines{
+        display:none;
+       
+      }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .lines{
+        display:none;
+       
+      }
+      .socialmediaiconnav{
+        display: none;
+      }
+    }
